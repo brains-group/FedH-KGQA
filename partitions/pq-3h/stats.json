@@ -1,0 +1,111 @@
+{
+  "tag": "C3_rho0.5_balanced_s0_ta",
+  "hops": 3,
+  "clients": 3,
+  "target_rho": 0.5,
+  "balance": "balanced",
+  "seed": 0,
+  "shuffle_fraction": 0.33984375,
+  "calibration_rho": 0.49633333333333335,
+  "calibration_trace": [
+    [
+      0.0,
+      0.07
+    ],
+    [
+      1.0,
+      0.8023333333333333
+    ],
+    [
+      0.5,
+      0.6316666666666667
+    ],
+    [
+      0.25,
+      0.437
+    ],
+    [
+      0.375,
+      0.51
+    ],
+    [
+      0.3125,
+      0.4686666666666667
+    ],
+    [
+      0.34375,
+      0.512
+    ],
+    [
+      0.328125,
+      0.44466666666666665
+    ],
+    [
+      0.3359375,
+      0.484
+    ],
+    [
+      0.33984375,
+      0.49633333333333335
+    ]
+  ],
+  "exec_rules": {
+    "no_return": false,
+    "topic_answer": true
+  },
+  "n_entities": 1836,
+  "n_facts": 2839,
+  "n_relations_with_inverse": 26,
+  "splits": {
+    "train": {
+      "n": 4158,
+      "n_with_gold_path": 4158,
+      "rho": 0.49037999037999036,
+      "questions_per_client": [
+        1398,
+        1393,
+        1367
+      ]
+    },
+    "dev": {
+      "n": 519,
+      "n_with_gold_path": 519,
+      "rho": 0.4682080924855491,
+      "questions_per_client": [
+        186,
+        163,
+        170
+      ]
+    },
+    "test": {
+      "n": 521,
+      "n_with_gold_path": 521,
+      "rho": 0.4990403071017274,
+      "questions_per_client": [
+        178,
+        174,
+        169
+      ]
+    }
+  },
+  "clients_info": [
+    {
+      "client": 0,
+      "owned_entities": 612,
+      "stored_triples": 2088,
+      "boundary_entities": 507
+    },
+    {
+      "client": 1,
+      "owned_entities": 612,
+      "stored_triples": 1820,
+      "boundary_entities": 460
+    },
+    {
+      "client": 2,
+      "owned_entities": 612,
+      "stored_triples": 1770,
+      "boundary_entities": 372
+    }
+  ]
+}

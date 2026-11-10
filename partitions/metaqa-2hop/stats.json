@@ -1,0 +1,91 @@
+{
+  "tag": "C3_rho0.5_balanced_s0",
+  "hops": 2,
+  "clients": 3,
+  "target_rho": 0.5,
+  "balance": "balanced",
+  "seed": 0,
+  "shuffle_fraction": 0.3125,
+  "calibration_rho": 0.493,
+  "calibration_trace": [
+    [
+      0.0,
+      0.18633333333333332
+    ],
+    [
+      1.0,
+      0.736
+    ],
+    [
+      0.5,
+      0.6076666666666667
+    ],
+    [
+      0.25,
+      0.437
+    ],
+    [
+      0.375,
+      0.5276666666666666
+    ],
+    [
+      0.3125,
+      0.493
+    ]
+  ],
+  "n_entities": 43234,
+  "n_facts": 133582,
+  "n_relations_with_inverse": 18,
+  "splits": {
+    "train": {
+      "n": 118980,
+      "n_with_gold_path": 118980,
+      "rho": 0.5043788872079341,
+      "questions_per_client": [
+        40037,
+        39704,
+        39239
+      ]
+    },
+    "dev": {
+      "n": 14872,
+      "n_with_gold_path": 14872,
+      "rho": 0.5026223776223776,
+      "questions_per_client": [
+        4978,
+        5012,
+        4882
+      ]
+    },
+    "test": {
+      "n": 14872,
+      "n_with_gold_path": 14872,
+      "rho": 0.5076654115115654,
+      "questions_per_client": [
+        5050,
+        4995,
+        4827
+      ]
+    }
+  },
+  "clients_info": [
+    {
+      "client": 0,
+      "owned_entities": 14412,
+      "stored_triples": 90010,
+      "boundary_entities": 14588
+    },
+    {
+      "client": 1,
+      "owned_entities": 14411,
+      "stored_triples": 90378,
+      "boundary_entities": 14547
+    },
+    {
+      "client": 2,
+      "owned_entities": 14411,
+      "stored_triples": 86776,
+      "boundary_entities": 14868
+    }
+  ]
+}

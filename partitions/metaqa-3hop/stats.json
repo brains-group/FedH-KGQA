@@ -1,0 +1,79 @@
+{
+  "tag": "C3_rho0.5_balanced_s0_nr",
+  "hops": 3,
+  "clients": 3,
+  "target_rho": 0.5,
+  "balance": "balanced",
+  "seed": 0,
+  "shuffle_fraction": 0.0,
+  "calibration_rho": 0.6076666666666667,
+  "calibration_trace": [
+    [
+      0.0,
+      0.6076666666666667
+    ],
+    [
+      1.0,
+      0.9626666666666667
+    ]
+  ],
+  "exec_rules": {
+    "no_return": true,
+    "topic_answer": false
+  },
+  "n_entities": 43234,
+  "n_facts": 133582,
+  "n_relations_with_inverse": 18,
+  "splits": {
+    "train": {
+      "n": 114196,
+      "n_with_gold_path": 114196,
+      "rho": 0.6090581106168342,
+      "questions_per_client": [
+        40823,
+        39739,
+        33634
+      ]
+    },
+    "dev": {
+      "n": 14274,
+      "n_with_gold_path": 14274,
+      "rho": 0.6001821493624773,
+      "questions_per_client": [
+        5094,
+        4906,
+        4274
+      ]
+    },
+    "test": {
+      "n": 14274,
+      "n_with_gold_path": 14274,
+      "rho": 0.6050861706599412,
+      "questions_per_client": [
+        5102,
+        4986,
+        4186
+      ]
+    }
+  },
+  "clients_info": [
+    {
+      "client": 0,
+      "owned_entities": 14412,
+      "stored_triples": 86529,
+      "boundary_entities": 7442
+    },
+    {
+      "client": 1,
+      "owned_entities": 14411,
+      "stored_triples": 90764,
+      "boundary_entities": 9089
+    },
+    {
+      "client": 2,
+      "owned_entities": 14411,
+      "stored_triples": 89871,
+      "boundary_entities": 10030
+    }
+  ]
+}
