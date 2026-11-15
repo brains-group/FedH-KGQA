@@ -11,7 +11,7 @@ these ablations use one seed. N = 3 uses the seed-0 values of the main experimen
 Requirements:
     python -m pip install matplotlib numpy seaborn
 Usage:
-    python plot_fedh_figures.py --outdir ./figures
+    python plot_fedh_figures.py --outdir ./overleaf_figures
 In Overleaf:
     \\includegraphics[width=\\textwidth]{fig_fedh_robustness.png}
 """
@@ -164,7 +164,7 @@ def figure_robustness(outdir: Path) -> None:
                     ax.text(0.3875, 0.62, "not reachable\nwith three\nclients", ha="center",
                             va="center", fontsize=6.5, color=MUTED)
                 if row == 1:
-                    ax.set_xlabel("reached ratio $\\rho$")
+                    ax.set_xlabel("cross-client ratio $\\rho$")
             elif key == "clients":
                 ax.set_xlim(2.3, 10.7)
                 ax.set_xticks([3, 5, 10])
